@@ -1,31 +1,51 @@
 <!DOCTYPE html>
 <!--
-Web mostrarà la plana d'una escola de swing
+Web que mostrarà la plana d'una escola de swing
 -->
-<html lang='es'> 
+<html lang='ca'> 
     <head>
         <title>Galactic Old School</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Llibreia de font-awesome per icones-->
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <!--Full d'estil del web-->
         <link rel="stylesheet" href="estilos/estilos.css">
     </head>
     <body>
+        <!--Imatge portada-->
+        <div>
+            <div id="portada"></div>
+        </div>
+        <!--Capçalera amb logotip-->
         <header>
-            <a href="index.html"><img src="imagenes/logo.png" alt="Galàctic Old School" style="width:200px;height:200px;" align="right" vspace="140" ></a>
+            <a href="index.html"><img src="imagenes/logo.png" alt="Galàctic Old School"></a>
         </header>
-        <div id="portada"></div>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Inici</a></li>
-                <li><a href="#L'escola">L'escola</a></li>
-                <li><a href="#">Inscripcions</a></li>
-                <li><a href="#horaris">Horaris</a></li>
-                <li><a href="#">Contacte</a></li>
-            </ul>
-        </nav>
-        <section class="articulos" style="clear: both">
+        <!--Sidebar dret (columna lateral)-->
+        <aside>
+            <div>
+                <label for="buscar">¿Qué es lo que estás buscando?</label><br/><br/>
+                <i class="fa fa-search"></i>&nbsp;&nbsp;<input type="search" id="buscar" name="buscar" placeholder="Introduce aquí un criterio de búsqueda..." />
+            </div>
+        </aside>
+        <!--Contingut central web-->
+        <section>
+            <h2>&nbsp;</h2>
             <article>
+                <h2>&nbsp;</h2>
+                <!--Menú-->
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">Inici</a></li>
+                        <li><a href="#Lescola">L'escola</a></li>
+                        <li><a href="#">Inscripcions</a></li>
+                        <li><a href="#horaris">Horaris</a></li>
+                        <li><a href="#">Contacte</a></li>
+                    </ul>
+                </nav>
+            </article>
+            <!--Primer apartat de contingut-->
+            <article style="clear: both">
                 <div>
                     <h2>Que és el lindy hop</h2>
                     <p>
@@ -57,14 +77,15 @@ Web mostrarà la plana d'una escola de swing
                     </p>
                 </div>
             </article>
+            <!--Segon apartat de contingut-->
             <article>
-                <a name="L'escola"></a>
+                <a id="Lescola"></a>
                 <div>
                     <h2>
                         L'escola
                     </h2>
                     <p>
-                        La nostra escola nexi amb l’objectiu de onar a conèixer i promoure els balls en parella inspirats en la música jazz amb swing i els que se'n derivaren com ara el lindy hop, Jazz steps, Balboa i Blues.
+                        La nostra escola neix amb l’objectiu de donar a conèixer i promoure els balls en parella inspirats en la música jazz amb swing i els que se'n derivaren com ara el lindy hop, Jazz steps, Balboa i Blues.
                     </p>
                     <p>
                         El nostre objectiu és difondre el coneixement i promoure la música que els acompanyava: el rag time, el jazz, el blues, el rythm & blues, el rockabilly, el rock & roll i en general, tots els estils musicals que contenen swing.
@@ -74,11 +95,13 @@ Web mostrarà la plana d'una escola de swing
                     </p>                    
                 </div>
             </article>
+            <!--Tercer apartat de contingut-->
             <article>
-                <a name="horaris"></a>
+                <a id="horaris"></a>
                 <h2>
                     HORARIS CURS 2018/2019 
                 </h2>
+                <!--Taula d'horaris-->
                 <table class="striped">
                     <thead>
                         <tr>
@@ -225,41 +248,67 @@ Web mostrarà la plana d'una escola de swing
 
                     </tbody>
                 </table>
-            </article>
+            </article> 
             <article>
+                <h2>&nbsp;</h2>
                 <details>
-                    <summary>
+                    <!--Exemple de regions desplegables i outline-->
+                    <summary class="exemple-outline">
                         DIRECCIONS DE LES SALES DE BALL
                     </summary>
                     <p>Inspiración Tango Estudio C/ Mateu Obrador, 1A</p>
                     <p>Galàctic Club C/ Murillo, 9 Palma.</p>
                 </details>
             </article>
+            <!--Secció multimedia-->
+            <article>
+                <h2>Ens pots veure i escoltar aquí</h2>
+                <h3>Amb una canço de swing...</h3>
+                <audio controls>
+                    <source src="media/Walter_Weeman_s_Brass_Singers_(elhaemusic.com).mp3" type="audio/mpeg">
+                </audio>
+                <br />
+                <!-- Vídeo -->
+                <h3>Amb un ball de lindy hop...</h3>
+                <video width="400" controls>
+                    <source src="media/VID-20170618-WA0013.mp4" type="video/mp4">
+                </video>
+                <br/>
+                <!-- Youtube -->
+                <h3>O a Youtube...</h3>
+                <iframe width="420" height="345" src="https://www.youtube.com/embed/oPUDfWNQ7RQ">
+                </iframe>
+            </article>
         </section>
-        <aside>
-            <div class="related">
-                <div class="box">
-                    <div>
-                        <label for="buscar"> ¿Qué es lo que estás buscando? </label>
-                        <span class="icon"><i class="fa fa-search"></i></span>
-                        <input type="search" id="buscar" name="buscar" placeholder="Introduce aquí un criterio de búsqueda..." />
-                    </div>
-                </div>
-            </div>
-            <div class="related"></div>
-            <div class="related"></div>
-        </aside>
+        <!--Peu de pàgina-->
         <footer>
             <div class="columna1">
                 <p>&#169; 2019 - Disseny web: <b>Joana Maimó</b></p>
             </div>
             <div class="columna2">
+                <!--Llistes amb enllaços a xarxes socials-->
                 <ul class="redes-sociales">
                     <li><a class="facebook" href="https://www.facebook.com/GalacticOldSchool/" title="Facebook" target="_blank"></a></li>
                     <li><a class="instagram" href="https://www.instagram.com/galacticoldschool/" title="Instagram" target="_blank"></a></li>
                 </ul>
+                <!--Exemple de Canvas-->
+                <canvas id="mi-canvas">
+                </canvas>
+                <script>
+                    var c = document.getElementById("mi-canvas");
+                    var ctx = c.getContext("2d");
+                    var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+                    grd.addColorStop(0, "#96D2D7");
+                    grd.addColorStop(1, "white");
+                    ctx.fillStyle = grd;
+                    ctx.fillRect(10, 10, 150, 80);
+                    ctx.font = '18pt Calibri';
+                    ctx.fillStyle = '#679597';
+                    ctx.fillText("GALÀCTIC", 20, 55);
+                </script>
             </div>
             <div class="columna3">
+                <!--Enllaç amb mail-->
                 <p>
                     Contacto: <a href="mailto:galacticoldschool@gmail.com">galacticoldschool@gmail.com</a>
                 </p>

@@ -1,18 +1,42 @@
-.titulo {
-    width: auto; 
-    height: 35px; 
-    background: blue
+/* Estil del cos del document web */
+body {
+    margin: 0 auto;
+    color: #111;
+    font-size: 14px;
+    font-family: "Open Sans", arial, sans-serif;
+    line-height: 1.6
 }
+/*Estil de la imatge de capçalera*/
 #portada {
-    background: url("../imagenes/Portada.jpg") no-repeat;
-    widht: 500px;
-    height: 500px
+    background-image: url(../imagenes/Portada.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 23px;
+    height: 656px
 }
-
+/*Estil de menú*/
 nav {
     float: right;
     margin: 20px 10px 20px;
 }
+nav a {
+    font-size: 1.2em;
+    font-weight: bold
+}
+/*Exemple de pseudo-classes dels enllaços*/
+nav a:link {
+    color: red;
+}
+nav a:visited {
+    color: #6B979C;
+}
+nav a:hover {
+    color: #D5D1BE;
+}
+nav a:active {
+    color: blue;
+}
+/*Exemple d'estil del menú'*/
 ul.menu {
     list-style: none;
 }
@@ -20,43 +44,69 @@ ul.menu li {
     display: inline-block;
     margin-left: 10px
 }
+/*Estil de la secció*/
 section{
-    width: 80%
+    width: 70%;
+    padding:50px;
 }
-article{
-    margin-top: 20px
+/*Exemple de cada article de la secció*/
+article {
+    margin-bottom: 30px
 }
-summary{
+article h2 {
+    font-size: 1.8em
+}
+/*Estil de la regió desplegable*/
+summary {
     font-weight: bold
 }
-aside{
-    width: 20% 
+/*Exemple de aside sidebar dret*/
+aside {
+    float: right;
+    width: 20%;
+    padding: 50px
 }
+/*Exemple d'estils dels components de l'aside'*/
+label {
+    font-size: 1.5em;
+    font-weight: bold
+}
+input {
+    width: 330px;
+    padding: 10px; 
+    border-radius: 10px
+}
+/*Exemple de l'estil de la taula'*/
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%
 }
-
 td, th {
     border: 1px solid #dddddd;
-    text-align: left;
+    text-align: center;
     padding: 8px
 }
-
-tr:nth-child(even) {
+tr:nth-child(even) { /*Exemple d'estil de pseudo-classes de les files de la taula*/
     background-color: #dddddd
 }
-footer {
-    height: 200px;
-    background: #000;
-    color: #fff
+/*Exemple de outline (border punteat al títol de la regió desplegable)*/
+.exemple-outline{
+    border: 1px solid #ccc;
+    outline: 2px dashed #9DD3D9;
 }
-footer .columna1, footer .columna2, footer .columna3 {
+/*Estil del peu de pàgina*/
+footer {
+    height: 165px;
+    background: #000;
+    color: #fff;
+    padding: 20px 20px 20px 40px;
+}
+footer .columna1, footer .columna2, footer .columna3 { /*peu dividit en 3 columnes*/
     float: left;
     width: 33.3%
 }
-/* Social bar */
+/*Estil dels enllaços de les xarxes socials*/
 ul.redes-sociales {
     list-style: none;
 }
@@ -69,16 +119,17 @@ ul.redes-sociales li a {
     width: 32px;
     height: 32px;
     opacity: 0.2;
-    filter: alpha(opacity=20);/*for ie8*/
-    -webkit-transition: opacity 200ms ease-out;
-    -moz-transition: opacity 200ms ease-out;
-    -o-transition: opacity 200ms ease-out;
-    transition: opacity 200ms ease-out
+    filter: alpha(opacity=20);
 }
+/*Estil d'imatge d'incona de facebook'*/
 a.facebook {
     background: url(../imagenes/iconos/facebook.png) no-repeat
 }
+/*Estil d'imatge d'incona de instagram'*/
 a.instagram {
     background: url(../imagenes/iconos/instagram.png) no-repeat
-
+}
+/*Estil de l'enllaç al mail del peu de pàgina'*/
+footer a{
+    color:#9DD3D9;
 }

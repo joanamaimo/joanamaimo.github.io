@@ -1,0 +1,48 @@
+.titulo {
+    width: auto; 
+    height: 35px; 
+    background: blue
+}
+#contenido {
+    float: left;
+    width: 75%
+}
+#sidebar {
+    float: left;
+    width: 25%
+}
+footer {
+    height: 200px;
+    background: #000;
+    color: #fff
+}
+footer .columna1, footer .columna2, footer .columna3 {
+    float: left;
+    width: 33.3%
+}
+/* Social bar */
+ul.redes-sociales {
+    list-style: none;
+}
+ul.redes-sociales li {
+    display: inline-block;
+    margin-left: 10px
+}
+ul.redes-sociales li a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    opacity: 0.2;
+    filter: alpha(opacity=20);/*for ie8*/
+    -webkit-transition: opacity 200ms ease-out;
+    -moz-transition: opacity 200ms ease-out;
+    -o-transition: opacity 200ms ease-out;
+    transition: opacity 200ms ease-out
+}
+a.facebook {
+    background: url(../imagenes/iconos/facebook.png) no-repeat
+}
+a.twitter {
+    background: url(../imagenes/iconos/twitter.png) no-repeat
+    
+}
