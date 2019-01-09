@@ -25,7 +25,7 @@ nav a {
 }
 /*Exemple de pseudo-classes dels enllaços*/
 nav a:link {
-    color: red;
+    color: #659695;
 }
 nav a:visited {
     color: #6B979C;
