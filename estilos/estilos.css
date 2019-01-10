@@ -34,7 +34,7 @@ nav a:hover {
     color: #D5D1BE;
 }
 nav a:active {
-    color: blue;
+    color: #363334;
 }
 /*Exemple d'estil del menú'*/
 ul.menu {
@@ -44,21 +44,38 @@ ul.menu li {
     display: inline-block;
     margin-left: 10px
 }
-/*Estil de la secció*/
+/*Estil de les seccions*/
 section{
     width: 70%;
     padding:50px;
 }
-/*Exemple de cada article de la secció*/
+/*Exemple de cada article de les seccions*/
 article {
     margin-bottom: 30px
 }
 article h2 {
     font-size: 1.8em
 }
-/*Estil de la regió desplegable*/
-summary {
-    font-weight: bold
+/*Estil de cada divisió de les seccions*/
+div{
+    text-align: justify;
+}
+/*Estil de les llistes de les seccions*/
+ul.a{
+    list-style-type: square;
+}
+/*Estil dels enllaços de les seccions*/
+a:link {
+    color: #679597;
+}
+a:visited {
+    color: #6B979C;
+}
+a:hover {
+    color: #D5D1BE;
+}
+a:active {
+    color: #363334;
 }
 /*Exemple de aside sidebar dret*/
 aside {
@@ -88,12 +105,38 @@ td, th {
     padding: 8px
 }
 tr:nth-child(even) { /*Exemple d'estil de pseudo-classes de les files de la taula*/
-    background-color: #dddddd
+    background-color: #9DD3D9
+}
+/*Estil de la regió desplegable*/
+summary {
+    font-weight: bold
 }
 /*Exemple de outline (border punteat al títol de la regió desplegable)*/
 .exemple-outline{
     border: 1px solid #ccc;
     outline: 2px dashed #9DD3D9;
+}
+/*Estil del botó per l'enllaç al formulari d'inscripcions de la secció inscripcions*/
+.botoinscripcio{
+    font-size: 15pt; 
+    font-weight: bold; 
+    padding: 6px; 
+    background-color: #FEF3E8; 
+    color: #9DD3D9; 
+    text-decoration: none; 
+} 
+.botoinscripcio:link, 
+.botoinscripcio:visited { 
+    border-top: 1px solid #cccccc; 
+    border-bottom: 2px solid #666666; 
+    border-left: 1px solid #cccccc; 
+    border-right: 2px solid #666666; 
+} 
+.botoinscripcio:hover { 
+    border-bottom: 1px solid #cccccc; 
+    border-top: 2px solid #666666; 
+    border-right: 1px solid #cccccc; 
+    border-left: 2px solid #666666; 
 }
 /*Estil del peu de pàgina*/
 footer {
